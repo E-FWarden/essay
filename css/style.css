@@ -2,7 +2,7 @@
 
 body 
 {
-    background: #fff2f6;
+    background: #FFF5B9;
     color: #0E0E0E;
     font-family: 'Inknut Antiqua', serif;
     font-family: 'Jaldi', sans-serif;
@@ -52,6 +52,7 @@ p {
     margin-bottom: 2.5rem;
     font-size: 16px;
     font-family: 'Jaldi', sans-serif;
+    padding-top: 2rem;
 }
 
 h3 {
@@ -64,19 +65,36 @@ h3 {
 
 
     
-
+.container {
+    position: relative;
+    width: 100%; /* Set the width to cover half of the page */
+    overflow: hidden; /* Hide any overflow from the container */
+    z-index: 1;
+}
 header h1 {
-    font-size: rem;
-    color:#D44E15;
-    font-family: 'Inknut Antiqua', serif;
-    color:  #f7f7f7;
+    font-size: 3rem;
+    color:#FCE037;
+    font-family: 'Kalnia', serif;
     margin-bottom: 0rem;
     margin-top: 0rem;
     letter-spacing: 0.15rem;
+    position: absolute;
+    top: 0;
+  padding-left: 2rem;
+  padding-top: 5.75rem;
+    left: 0;
+    margin: 20px;
+   line-height: 4.25rem;
+    width: 50%; /* Set the width of the text to cover half of the page */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
 }
 
 
 
+.font1{
+   
+    font-family:  'open sans', sans-serif;
+}
 
 
 h3 {
@@ -93,10 +111,14 @@ header p {
 .dropcap {
     font-family: 'Jaldi', sans-serif;
     float: left;
-    line-height: 35%;
+    line-height: 0%;
     width: .8.40em;
     font-size: 300%;
-    color: #8B2900; 
+    color: #DF1022; 
+}
+
+strong{
+    color: #DF1022;
 }
 
 
@@ -106,10 +128,11 @@ nav {
     left: 0;
     margin: 0;
     width: 100%;
-    background: #2C3336;
+    background: #DF1022;
     padding: 0rem 0 ;
     font-size: 0.8rem;
     position: fixed;
+    z-index: 3;
 }
 
 nav h2{
@@ -137,7 +160,7 @@ nav ul{
 
 
 nav a:link {
-    color: #0E0E0E;
+    color: #FCE037;
 }
 
 nav ul li {
@@ -168,48 +191,22 @@ nav a:hover {
 
 
 footer {
-    background: #333;
+    background: #0E0E0E;
     text-align: center;
     font-size: 0.8rem;
     color: #f7f7f7;
     padding: 2rem 0
+    
 
+}
+footer a:link{
+    color: #FCE037;
+}
+footer a:hover {
+    color: #DF1022;
 }
 
 
-.connections{
-    position: relative;
-    margin: 0 auto;}
-
-.connections ul{
-    margin: 0;
-    padding: 0;}
-
-.connections li{
-    margin: 0 10px;
-    padding: 0;
-    list-style: none;
-    display: inline-block;  }
-
-.connections a:link{
-        border-bottom: none;       }
-
-.connections img, .connections svg{
-    border: none;}
-
-.connections a:hover img, .connections a:hover svg{
-    border-bottom: none;}
-
- .connections svg {
-    margin: 2rem auto;}
-
-.connections a:hover svg path {
-    fill: #333;
-    transition: all 0.2s ease-in-out;}
-
-footer .connections a:hover svg path {
-    fill:  #C2C2C2;
-    transition: all 0.2s ease-in-out;}
 
    
 /* Media query for screens smaller than 600px */
